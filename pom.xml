@@ -11,7 +11,7 @@
 	<groupId>com.pranshi.loan</groupId>
 	<artifactId>loan</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>loan</name>
 	<description>Demo for Loan</description>
 	<url/>
@@ -99,6 +99,12 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
+				<!--  mention the image for docker image via buildpack -->
+				
+                    <image>
+                        <name>asthattyagi/loans:v1</name>
+                    </image>
+                
 					<excludes>
 						<exclude>
 							<groupId>org.projectlombok</groupId>
