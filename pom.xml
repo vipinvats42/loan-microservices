@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.pranshi.loan</groupId>
 	<artifactId>loan</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>v1</version>
 	<packaging>jar</packaging>
 	<name>loan</name>
 	<description>Demo for Loan</description>

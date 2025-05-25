@@ -1,0 +1,43 @@
+server:
+  port: 8090
+
+spring: 
+   datasource: 
+      url: jdbc:h2:mem:testdb 
+      driverClassName: org.h2.Driver
+      username: sa
+      pasword: ''
+
+   h2:
+     console:
+       enabled: true
+
+   jpa:
+     database-platform: org.hibernate.dialect.H2Dialect
+     hibernate:
+       ddl-auto: update
+       show-sql: true        
+   config:
+     import: 
+       - "application_qa.yml"
+       - "application_prod.yml"  
+   profiles:
+     active:
+       - "qa"
+  
+   application:
+     name: cards
+       
+   build:
+     version: "3.0"  
+
+   cards:
+     message: "Welcome to loan microservice"
+     contactDetails:
+       name: "Vipin Tyagi"
+       email: "vipinvats88@gmail.com"
+     onCallSupport:
+      -(555) 666 7766
+      -(555) 666 8877    
+     
+
