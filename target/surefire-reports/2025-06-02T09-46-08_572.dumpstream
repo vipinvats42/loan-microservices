@@ -1,0 +1,5 @@
+# Created at 2025-06-02T09:46:09.713
+Boot Manifest-JAR contains absolute paths in classpath 'G:\vscode-project-docker\docker-boot-project\microservice\loan-microservice\loan\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+
