@@ -27,8 +27,8 @@ spring:
    application:
      name: cards
        
-   build:
-     version: "3.0"  
+build:
+  version: "3.0"  
 
   
 

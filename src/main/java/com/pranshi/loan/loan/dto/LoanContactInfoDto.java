@@ -3,8 +3,15 @@ package com.pranshi.loan.loan.dto;
 import java.util.HashMap;
 import java.util.List;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import lombok.Getter;
+import lombok.Setter;
 
 @ConfigurationProperties(prefix = "cards")
-public record LoanContactInfoDto(String message, HashMap<String, String> contactDetails, List<String> onCallSupport) {
+@Getter
+@Setter
+public class LoanContactInfoDto {
+    private String message;
+    private HashMap<String, String> contactDetails;
+    private List<String> onCallSupport;
 
 }
